@@ -1,0 +1,7 @@
+server:
+  port: 9193
+spring:
+  application:
+    name: AWS-KINESIS-CONSUMER-SERVICE
+
+
