@@ -33,7 +33,7 @@ ext {
 dependencies {
 
 
-
+implementation 'org.springframework.cloud:spring-cloud-stream-binder-kinesis:2.2.0'
 
 
 	implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin'

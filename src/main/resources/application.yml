@@ -3,3 +3,11 @@ server:
 spring:
   application:
     name: AWS-KINESIS-CONSUMER-SERVICE
+  cloud:
+    stream:
+      bindings:
+        processOrder-in-0:
+          destination: suraj-kinesis-1
+          content-type: application/json
+      function:
+        definition: processOrder
