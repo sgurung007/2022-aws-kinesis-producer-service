@@ -12,4 +12,5 @@ public class AwsKinesisConsumerApplication {
 		SpringApplication.run(AwsKinesisConsumerApplication.class, args);
 	}
 
+
 }

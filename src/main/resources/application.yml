@@ -9,5 +9,11 @@ spring:
         processOrder-in-0:
           destination: suraj-kinesis-1
           content-type: application/json
+        produceOrderSecond-out-0:
+          destination: suraj-kinesis-1
+          content-type: application/json
+          producer:
+            partitionKeyExpression: "1"
       function:
-        definition: processOrder
+        definition: processOrder;produceOrderSecond
+originator: aws-consumer-service
