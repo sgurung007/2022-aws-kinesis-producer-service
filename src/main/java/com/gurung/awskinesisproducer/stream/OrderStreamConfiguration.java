@@ -1,8 +1,9 @@
-package com.gurung.awskinesisconsumer.stream;
+package com.gurung.awskinesisproducer.stream;
 
-import com.gurung.awskinesisconsumer.entity.Event;
+import com.gurung.awskinesisproducer.entity.Event;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
+import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;
@@ -20,10 +21,11 @@ import java.util.function.Supplier;
 @Slf4j
 public class OrderStreamConfiguration {
     @Bean
-    public Consumer<Event> processOrder(){
+    public Consumer<Message<?>> processOrder(){
         return event -> {
-            log.info("Order from the kinesis stream:");
-            log.info(event.getOrder().toString());
+//            log.info("Order from the kinesis stream: {}",event.getPayload());
+            log.info(event.getHeaders().toString());
+            log.info(event.getPayload().toString());
         };
     }
 

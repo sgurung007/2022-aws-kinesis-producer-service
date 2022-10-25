@@ -1,4 +1,4 @@
-package com.gurung.awskinesisconsumer.entity;
+package com.gurung.awskinesisproducer.entity;
 
 
 import java.util.UUID;

@@ -1,9 +1,9 @@
-package com.gurung.awskinesisconsumer.controller;
+package com.gurung.awskinesisproducer.controller;
 
 
-import com.gurung.awskinesisconsumer.entity.Event;
-import com.gurung.awskinesisconsumer.entity.Order;
-import com.gurung.awskinesisconsumer.stream.OrderStreamConfiguration;
+import com.gurung.awskinesisproducer.entity.Event;
+import com.gurung.awskinesisproducer.entity.Order;
+import com.gurung.awskinesisproducer.stream.OrderStreamConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
